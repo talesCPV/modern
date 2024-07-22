@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+      .user{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         align-items: center;
+         justify-content: center;
+         border-bottom: solid 1px;
+         padding-bottom: 20px;
+      }
+      .user img{
+         width: 20%;
+      }  
+
+      .user p{
+         margin: 0 ;
+      }
+
+      .user p:nth-of-type(2) {
+         font-size: 0.7em;
+      }
+
+      #logo{
+         filter: invert(100%);
+         position: absolute;
+         top: 40px;
+         right: 20px;
+         width: 150px;
+      }
+
+      .logout{
+         position: relative;
+         bottom: 10px;
+         border-top: solid 1px;
+         margin-top: 10px;
+         padding: 0;
+      }
+
+      .icon{
+         margin-right: 20px;
+         font-size: 1.5em;
+      }
+
+    </style>
+</head>
+<body>
+      
+   <nav role='navigation'>
+      <div id="menuToggle">
+      
+         <input type="checkbox" />
+         <span></span><span></span><span></span>
+
+   
+
+            <ul id="menu">
+               <li>
+                  <div class="user">
+                     <img src="assets/logo.png" id="logo">
+                     <img src="assets/default_user.png">
+                     <p>Tales C. Dantas</p>
+                     <p>tales@flexibus.com.br</p>
+   
+                  </div>
+               </li>
+               <li>
+                  <label for="drop-0" class="toggle">
+                     <i class="icon fa-solid fa-desktop"></i>
+                     Sistema 
+                     <i class="cursor fa-solid fa-arrow-right"></i>
+
+                  </label>
+                  <input type="checkbox" id="drop-0" >
+                  <ul class="sub-menu">
+                     <li><a>Permissões</a></li>
+                     <li><a>Usuários</a></li>
+                     <li><a>Log do Sistema</a></li>
+                     <li><a>NFe Config</a></li>
+                     <li><a>NFs Config</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <label for="drop-1" class="toggle">
+                     <i class="icon fa-solid fa-screwdriver-wrench"></i>
+                     Ferramentas 
+                     <i class="cursor fa-solid fa-arrow-right"></i>
+                     </label>
+                  <input type="checkbox" id="drop-1" >
+                  <ul class="sub-menu">
+                     <li>
+                        <label for="drop-2" class="toggle">
+                           Cadastros
+                           <i class="cursor fa-solid fa-arrow-right"></i>
+                        </label>
+                        <input type="checkbox" id="drop-2" >
+                        <ul class="sub-menu">
+                           <li><a>Empresas</a></li>
+                           <li><a>Produtos</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <label for="drop-3" class="toggle">
+                           Parâmetros
+                           <i class="cursor fa-solid fa-arrow-right"></i>
+                        </label>
+                        <input type="checkbox" id="drop-3" >
+                        <ul class="sub-menu">
+                           <li><a>Setores</a></li>
+                           <li><a>Cargos</a></li>
+                           <li><a>Unidades</a></li>
+                           <li><a>Feriados</a></li>
+                        </ul>
+                     </li>
+                     <li><a>Inventário</a></li>
+                     <li><a>PCP</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <label for="drop-4" class="toggle">
+                     <i class="icon fa-solid fa-person-digging"></i>
+                     Operacional
+                     <i class="cursor fa-solid fa-arrow-right"></i>
+                  </label>
+                  <input type="checkbox" id="drop-4" >
+                  <ul class="sub-menu">
+                     <li><a>Análise de Frota</a></li>
+                     <li><a>Serviço Executado</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <label for="drop-5" class="toggle">
+                     <i class="icon fa-solid fa-sitemap"></i>
+                     RH
+                     <i class="cursor fa-solid fa-arrow-right"></i>
+                  </label>
+                  <input type="checkbox" id="drop-5" >
+                  <ul class="sub-menu">
+                     <li><a>Funcionários</a></li>
+                     <li><a>Relógio de Ponto</a></li>
+                     <li><a>Férias</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <label for="drop-6" class="toggle">
+                     <i class="icon fa-solid fa-money-bill-trend-up"></i>
+                     Comercial
+                     <i class="cursor fa-solid fa-arrow-right"></i>
+                  </label>
+                  <input type="checkbox" id="drop-6" >
+                  <ul class="sub-menu">
+                     <li><a>Cotações</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <label for="drop-7" class="toggle">
+                     <i class="icon fa-regular fa-file-code"></i>
+                     Fiscal
+                     <i class="cursor fa-solid fa-arrow-right"></i>
+                  </label>
+                  <input type="checkbox" id="drop-7" >
+                  <ul class="sub-menu">
+                     <li><a>NFe</a></li>
+                     <li><a>NFs</a></li>
+                     <li><a>ICMS</a></li>
+                     <li><a>NFe Teste</a></li>
+                  </ul>
+               </li>
+               <li class="usr-menu">
+                  <label for="drop-8" class="toggle">
+                     <i class="icon fa-solid fa-user"></i>
+                     Usuário
+                     <i class="cursor fa-solid fa-arrow-right"></i>
+                  </label><input type="checkbox" id="drop-8" >
+                  <ul class="sub-menu">
+                     <li><a>Usuário</a></li>
+                     <li><a>Mens.</a></li>
+                     <li><a>Agenda</a></li>
+                     <li><a>Calc.</a></li>
+                     <li><a>Config.</a></li>
+                     <li><a>Logout</a></li>
+                  </ul>
+               </li>
+               <li class="logout">                  
+                     <p> <i class="fa-solid fa-right-from-bracket"></i> Logout</p>
+                  
+               </li>
+      
+            </ul>         
+
+
+         
+      
+   
+
+
+      </div>
+   </nav>
+
+</body>
+</html>
